@@ -15,7 +15,7 @@ def create_app():
     login_manager.init_app(app)
 
     from .auth.routes import auth_bp
-    from .navigation.routes import nav_bp
+    from .navigation.route import nav_bp
 
     app.register_blueprint(auth_bp)
     app.register_blueprint(nav_bp)
